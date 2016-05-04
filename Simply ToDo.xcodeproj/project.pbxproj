@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75B973FD1CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B973FA1CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.m */; };
+		1503A29A7430756FED0682C9 /* Pods_TableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC5D3EDA75F0690CC425AF /* Pods_TableViewDemo.framework */; };
 		75B973FE1CD1FD0D00B2E8FB /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B973FC1CD1FD0D00B2E8FB /* ToDoItem.m */; };
+		75B974041CD3E65400B2E8FB /* DataPickerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B974031CD3E65400B2E8FB /* DataPickerLabel.m */; };
+		75B9740C1CD67B9C00B2E8FB /* notificationSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 75B9740B1CD67B9C00B2E8FB /* notificationSound.wav */; };
+		75B974161CD7EB4C00B2E8FB /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B974151CD7EB4C00B2E8FB /* ToDo.swift */; };
+		75B974191CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B974181CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.m */; };
 		75C4806C1CD0D876001F38DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806B1CD0D876001F38DB /* main.m */; };
 		75C4806F1CD0D876001F38DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806E1CD0D876001F38DB /* AppDelegate.m */; };
 		75C480721CD0D876001F38DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C480711CD0D876001F38DB /* ViewController.m */; };
@@ -22,11 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		75B973F91CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ToDoItem+CoreDataProperties.h"; sourceTree = "<group>"; };
-		75B973FA1CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ToDoItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1EB025D3E4F29F13F1A4B612 /* Pods-TableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3CBC5D3EDA75F0690CC425AF /* Pods_TableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFB6E7C1916C3211F2F02ED /* Pods-TableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		75B973FB1CD1FD0D00B2E8FB /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		75B973FC1CD1FD0D00B2E8FB /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
-		75C480671CD0D876001F38DB /* TableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B974021CD3E65400B2E8FB /* DataPickerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPickerLabel.h; sourceTree = "<group>"; };
+		75B974031CD3E65400B2E8FB /* DataPickerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPickerLabel.m; sourceTree = "<group>"; };
+		75B9740B1CD67B9C00B2E8FB /* notificationSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notificationSound.wav; sourceTree = "<group>"; };
+		75B974151CD7EB4C00B2E8FB /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		75B974171CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ToDoItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		75B974181CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ToDoItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		75C480671CD0D876001F38DB /* Simply ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply ToDo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C4806B1CD0D876001F38DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75C4806D1CD0D876001F38DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75C4806E1CD0D876001F38DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1503A29A7430756FED0682C9 /* Pods_TableViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,19 +73,21 @@
 		75C4805E1CD0D876001F38DB = {
 			isa = PBXGroup;
 			children = (
-				75B973F91CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.h */,
-				75B973FA1CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.m */,
+				75B974171CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.h */,
+				75B974181CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.m */,
 				75B973FB1CD1FD0D00B2E8FB /* ToDoItem.h */,
 				75B973FC1CD1FD0D00B2E8FB /* ToDoItem.m */,
 				75C480691CD0D876001F38DB /* TableViewDemo */,
 				75C480681CD0D876001F38DB /* Products */,
+				B86EBF12D6475B776E8C66FA /* Pods */,
+				8404FDA0A86C677C2F5E4EAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		75C480681CD0D876001F38DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75C480671CD0D876001F38DB /* TableViewDemo.app */,
+				75C480671CD0D876001F38DB /* Simply ToDo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +98,8 @@
 				75C4806D1CD0D876001F38DB /* AppDelegate.h */,
 				75C4806E1CD0D876001F38DB /* AppDelegate.m */,
 				75C4808D1CD156B8001F38DB /* Controllers */,
+				75B974021CD3E65400B2E8FB /* DataPickerLabel.h */,
+				75B974031CD3E65400B2E8FB /* DataPickerLabel.m */,
 				75C480841CD0DE27001F38DB /* MyTableViewCell.h */,
 				75C480851CD0DE27001F38DB /* MyTableViewCell.m */,
 				75C480941CD157F9001F38DB /* EMCoreDataContextManager.h */,
@@ -101,7 +117,9 @@
 		75C4806A1CD0D876001F38DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75B9740B1CD67B9C00B2E8FB /* notificationSound.wav */,
 				75C4806B1CD0D876001F38DB /* main.m */,
+				75B974151CD7EB4C00B2E8FB /* ToDo.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,24 +137,44 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		8404FDA0A86C677C2F5E4EAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CBC5D3EDA75F0690CC425AF /* Pods_TableViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86EBF12D6475B776E8C66FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DFB6E7C1916C3211F2F02ED /* Pods-TableViewDemo.debug.xcconfig */,
+				1EB025D3E4F29F13F1A4B612 /* Pods-TableViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75C480661CD0D876001F38DB /* TableViewDemo */ = {
+		75C480661CD0D876001F38DB /* Simply ToDo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75C480811CD0D876001F38DB /* Build configuration list for PBXNativeTarget "TableViewDemo" */;
+			buildConfigurationList = 75C480811CD0D876001F38DB /* Build configuration list for PBXNativeTarget "Simply ToDo" */;
 			buildPhases = (
+				A795EBB9A470A16BFB6EDA71 /* Check Pods Manifest.lock */,
 				75C480631CD0D876001F38DB /* Sources */,
 				75C480641CD0D876001F38DB /* Frameworks */,
 				75C480651CD0D876001F38DB /* Resources */,
+				2A50B37938F4859541B63B60 /* Embed Pods Frameworks */,
+				3547DFB9BD1D3D8BAD2D519C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TableViewDemo;
+			name = "Simply ToDo";
 			productName = TableViewDemo;
-			productReference = 75C480671CD0D876001F38DB /* TableViewDemo.app */;
+			productReference = 75C480671CD0D876001F38DB /* Simply ToDo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 75C480621CD0D876001F38DB /* Build configuration list for PBXProject "TableViewDemo" */;
+			buildConfigurationList = 75C480621CD0D876001F38DB /* Build configuration list for PBXProject "Simply ToDo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75C480661CD0D876001F38DB /* TableViewDemo */,
+				75C480661CD0D876001F38DB /* Simply ToDo */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C4807D1CD0D876001F38DB /* LaunchScreen.storyboard in Resources */,
+				75B9740C1CD67B9C00B2E8FB /* notificationSound.wav in Resources */,
 				75C4807A1CD0D876001F38DB /* Assets.xcassets in Resources */,
 				75C480751CD0D876001F38DB /* Main.storyboard in Resources */,
 			);
@@ -184,13 +223,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A50B37938F4859541B63B60 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3547DFB9BD1D3D8BAD2D519C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A795EBB9A470A16BFB6EDA71 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75C480631CD0D876001F38DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B973FD1CD1FD0D00B2E8FB /* ToDoItem+CoreDataProperties.m in Sources */,
+				75B974191CD7F3FD00B2E8FB /* ToDoItem+CoreDataProperties.m in Sources */,
+				75B974041CD3E65400B2E8FB /* DataPickerLabel.m in Sources */,
 				75C480721CD0D876001F38DB /* ViewController.m in Sources */,
+				75B974161CD7EB4C00B2E8FB /* ToDo.swift in Sources */,
 				75C4806F1CD0D876001F38DB /* AppDelegate.m in Sources */,
 				75B973FE1CD1FD0D00B2E8FB /* ToDoItem.m in Sources */,
 				75C480931CD15748001F38DB /* DetailViewController.m in Sources */,
@@ -307,30 +396,37 @@
 		};
 		75C480821CD0D876001F38DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFB6E7C1916C3211F2F02ED /* Pods-TableViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TableViewDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.evgenymitko.TableViewDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Simply ToDo";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		75C480831CD0D876001F38DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB025D3E4F29F13F1A4B612 /* Pods-TableViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TableViewDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.evgenymitko.TableViewDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Simply ToDo";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75C480621CD0D876001F38DB /* Build configuration list for PBXProject "TableViewDemo" */ = {
+		75C480621CD0D876001F38DB /* Build configuration list for PBXProject "Simply ToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75C4807F1CD0D876001F38DB /* Debug */,
@@ -339,7 +435,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75C480811CD0D876001F38DB /* Build configuration list for PBXNativeTarget "TableViewDemo" */ = {
+		75C480811CD0D876001F38DB /* Build configuration list for PBXNativeTarget "Simply ToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75C480821CD0D876001F38DB /* Debug */,

@@ -12,6 +12,8 @@
 
 @interface AppDelegate ()
 
+- (void) fireNotificationAlertWithTitle: (NSString *)title andBody: (NSString *)body;
+
 @end
 
 @implementation AppDelegate
@@ -20,6 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     id<EMCoreDataContextManager>child = (id<EMCoreDataContextManager>) self.window.rootViewController;
     [child reciveManageObjectContext:self.managedObjectContext];
+    application.statusBarStyle = UIStatusBarStyleLightContent;
     
     return YES;
 }
@@ -46,6 +49,23 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+- (void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    NSString *message = notification.alertBody;
+    [self fireNotificationAlertWithTitle:@"Simply ToDo" andBody:notification.alertBody];
+}
+
+- (void) fireNotificationAlertWithTitle: (NSString *)title andBody: (NSString *)body {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:body preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:ok];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+    });
+    
 }
 
 #pragma mark - Core Data stack

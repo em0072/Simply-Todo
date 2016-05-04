@@ -2,7 +2,7 @@
 //  ToDoItem+CoreDataProperties.m
 //  TableViewDemo
 //
-//  Created by Митько Евгений on 28.04.16.
+//  Created by Митько Евгений on 04.05.16.
 //  Copyright © 2016 Evgeny Mitko. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,11 +13,14 @@
 
 @implementation ToDoItem (CoreDataProperties)
 
+@dynamic color;
 @dynamic detail;
 @dynamic dueDate;
-@dynamic title;
-@dynamic priority;
-@dynamic color;
+@dynamic historyDate;
+@dynamic isComplete;
+@dynamic isNotificationSet;
 @dynamic sectionDate;
+@dynamic title;
+@dynamic sortString;
 
 @end

@@ -8,13 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "ToDoItem.h"
+#import <MGSwipeTableCell/MGSwipeTableCell.h>
 
-@interface MyTableViewCell : UITableViewCell
+@interface MyTableViewCell : MGSwipeTableCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *priorityLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *notificationIcon;
 @property (nonatomic) ToDoItem * toDoItem;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *notificationIconWidth;
+@property (weak, nonatomic) IBOutlet UILabel *overDueLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *horizontalConstrainTonotificationIcon;
+@property (weak, nonatomic) IBOutlet UIView *mainView;
 
 
 - (void) setCell: (ToDoItem *) incoming;

@@ -12,6 +12,7 @@
 #import "EMCoreDataContextManager.h"
 #import "EMToDoEntityManager.h"
 #import "DetailViewController.h"
+#import <MGSwipeTableCell/MGSwipeTableCell.h>
 
 
 @interface ViewController : UIViewController <EMCoreDataContextManager>
