@@ -52,7 +52,6 @@
 }
 
 - (void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    NSString *message = notification.alertBody;
     [self fireNotificationAlertWithTitle:@"Simply ToDo" andBody:notification.alertBody];
 }
 
@@ -60,7 +59,11 @@
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:body preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        
+    }];
     [alert addAction:ok];
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];

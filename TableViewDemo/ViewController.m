@@ -40,6 +40,8 @@
     [super viewWillAppear:YES];
 //    [self.tableView reloadData];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableView DataSource
@@ -55,8 +57,25 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSLog(@"name %@ for index %ld", self.resultController.sections[section].name, section);
-    return self.resultController.sections[section].name;
+
+    NSString *dateString = self.resultController.sections[section].name;
+    NSDateFormatter *dateFormatterForSection = [[NSDateFormatter alloc] init];
+    [dateFormatterForSection setDateFormat:@"yyyy-MM-dd HH:mm:ss zzz"];
+    [dateFormatterForSection setLocale:[NSLocale currentLocale]];
+    NSDate *capturedStartDate = [dateFormatterForSection dateFromString: dateString];
+    NSLog(@"%@", dateString);
+    NSString *sectionName = [[NSString alloc] init];
+    if ([dateString isEqualToString:@"1970-01-01 21:00:00 +0000"]) {
+        sectionName = @"My Simple Tasks";
+    } else if ([dateString isEqualToString:@"5000-01-01 21:00:00 +0000"]) {
+        sectionName = @"🐣Completed";
+    } else {
+        sectionName = [self dateToSectionDateFromNSDate:capturedStartDate];
+    }
+    
+    
+    
+    return sectionName; //self.resultController.sections[section].name;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -89,21 +108,29 @@
                                        if ([cell.toDoItem.sectionDate isEqualToString: @"🐣Completed"]) {
                                            if (cell.toDoItem.dueDate == nil) {
                                                cell.toDoItem.sectionDate = @" My Simple Tasks";
-                                               cell.toDoItem.sortString = @"a";
+                                               
+                                               NSDateComponents *completeDate  =[[NSDateComponents alloc] init];
+                                               [completeDate setDay:2];
+                                               [completeDate setMonth: 1];
+                                               [completeDate setYear: 1970];
+                                               NSCalendar *g = [[ NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+                                               cell.toDoItem.historyDate = [g dateFromComponents:completeDate];
+                                               
                                            } else {
                                                cell.toDoItem.sectionDate = [self dateToSectionDateFromNSDate:cell.toDoItem.dueDate];
-                                               NSString *sort = @"b";
-                                               sort = [sort stringByAppendingString:[NSString stringWithFormat:@"%f", [cell.toDoItem.dueDate timeIntervalSince1970]]];
-                                               cell.toDoItem.sortString = sort;
+                                               cell.toDoItem.historyDate = cell.toDoItem.dueDate;
                                            }
                                            cell.toDoItem.isComplete = @NO;
                                        } else {
                                              cell.toDoItem.sectionDate = @"🐣Completed";
                                              [self deletNotificationForCell:cell];
                                            cell.toDoItem.isComplete = @YES;
-                                           cell.toDoItem.sortString = @"c";
-                                           
-                                           
+                                           NSDateComponents *completeDate  =[[NSDateComponents alloc] init];
+                                           [completeDate setDay:2];
+                                           [completeDate setMonth: 1];
+                                           [completeDate setYear: 5000];
+                                           NSCalendar *g = [[ NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+                                           cell.toDoItem.historyDate = [g dateFromComponents:completeDate];
                                        }
                                        [self saveContext];
                                        return YES;
@@ -171,9 +198,9 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     request.entity = [NSEntityDescription entityForName:@"ToDoItem" inManagedObjectContext:self.managedObjectContext];
     request.predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
-    request.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"sectionDate" ascending:YES]];
+    request.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"historyDate" ascending:YES],[[NSSortDescriptor alloc] initWithKey:@"dueDate" ascending:YES]];
     
-    self.resultController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"sectionDate" cacheName:nil];
+    self.resultController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"historyDate" cacheName:nil];
     NSError *error;
     BOOL fetchSucceeded = [self.resultController performFetch:&error];
     if (!fetchSucceeded) {

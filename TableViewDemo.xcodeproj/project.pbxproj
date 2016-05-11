@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1503A29A7430756FED0682C9 /* Pods_TableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC5D3EDA75F0690CC425AF /* Pods_TableViewDemo.framework */; };
+		4C9C60D472A2F3F7147AE9D1 /* Pods_Simply_ToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BF0205AD3DEFAE05630D4E /* Pods_Simply_ToDo.framework */; };
 		75B973FE1CD1FD0D00B2E8FB /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B973FC1CD1FD0D00B2E8FB /* ToDoItem.m */; };
 		75B974041CD3E65400B2E8FB /* DataPickerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B974031CD3E65400B2E8FB /* DataPickerLabel.m */; };
 		75B9740C1CD67B9C00B2E8FB /* notificationSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 75B9740B1CD67B9C00B2E8FB /* notificationSound.wav */; };
@@ -26,9 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092F20A05B2E9C41322B3419 /* Pods-Simply ToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ToDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ToDo/Pods-Simply ToDo.debug.xcconfig"; sourceTree = "<group>"; };
 		1EB025D3E4F29F13F1A4B612 /* Pods-TableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3CBC5D3EDA75F0690CC425AF /* Pods_TableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BF0205AD3DEFAE05630D4E /* Pods_Simply_ToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simply_ToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFB6E7C1916C3211F2F02ED /* Pods-TableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7198088372B2A2DC6B0D560D /* Pods-Simply ToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ToDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ToDo/Pods-Simply ToDo.release.xcconfig"; sourceTree = "<group>"; };
 		75B973FB1CD1FD0D00B2E8FB /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		75B973FC1CD1FD0D00B2E8FB /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		75B974021CD3E65400B2E8FB /* DataPickerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPickerLabel.h; sourceTree = "<group>"; };
@@ -63,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1503A29A7430756FED0682C9 /* Pods_TableViewDemo.framework in Frameworks */,
+				4C9C60D472A2F3F7147AE9D1 /* Pods_Simply_ToDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3CBC5D3EDA75F0690CC425AF /* Pods_TableViewDemo.framework */,
+				58BF0205AD3DEFAE05630D4E /* Pods_Simply_ToDo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +154,8 @@
 			children = (
 				6DFB6E7C1916C3211F2F02ED /* Pods-TableViewDemo.debug.xcconfig */,
 				1EB025D3E4F29F13F1A4B612 /* Pods-TableViewDemo.release.xcconfig */,
+				092F20A05B2E9C41322B3419 /* Pods-Simply ToDo.debug.xcconfig */,
+				7198088372B2A2DC6B0D560D /* Pods-Simply ToDo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -188,10 +194,11 @@
 				TargetAttributes = {
 					75C480661CD0D876001F38DB = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 65952893XA;
 					};
 				};
 			};
-			buildConfigurationList = 75C480621CD0D876001F38DB /* Build configuration list for PBXProject "Simply ToDo" */;
+			buildConfigurationList = 75C480621CD0D876001F38DB /* Build configuration list for PBXProject "TableViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,7 +243,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply ToDo/Pods-Simply ToDo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3547DFB9BD1D3D8BAD2D519C /* Copy Pods Resources */ = {
@@ -251,7 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewDemo/Pods-TableViewDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply ToDo/Pods-Simply ToDo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A795EBB9A470A16BFB6EDA71 /* Check Pods Manifest.lock */ = {
@@ -396,13 +403,15 @@
 		};
 		75C480821CD0D876001F38DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DFB6E7C1916C3211F2F02ED /* Pods-TableViewDemo.debug.xcconfig */;
+			baseConfigurationReference = 092F20A05B2E9C41322B3419 /* Pods-Simply ToDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.evgenymitko.TableViewDemo;
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.evgenymitko.Simply-ToDo";
 				PRODUCT_NAME = "Simply ToDo";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -411,13 +420,14 @@
 		};
 		75C480831CD0D876001F38DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EB025D3E4F29F13F1A4B612 /* Pods-TableViewDemo.release.xcconfig */;
+			baseConfigurationReference = 7198088372B2A2DC6B0D560D /* Pods-Simply ToDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.evgenymitko.TableViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.evgenymitko.Simply-ToDo";
 				PRODUCT_NAME = "Simply ToDo";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
@@ -426,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75C480621CD0D876001F38DB /* Build configuration list for PBXProject "Simply ToDo" */ = {
+		75C480621CD0D876001F38DB /* Build configuration list for PBXProject "TableViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75C4807F1CD0D876001F38DB /* Debug */,

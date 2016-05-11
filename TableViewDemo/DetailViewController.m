@@ -280,6 +280,7 @@
         self.itemToEdit.sortString = @"a";
     } else {
         self.itemToEdit.dueDate = self.dataPicker.date;
+        self.itemToEdit.historyDate = self.itemToEdit.dueDate;
         self.itemToEdit.sectionDate = [self dateToSectionDateFromNSDate:self.dataPicker.date];
         NSString *sort = @"b";
         sort = [sort stringByAppendingString:[NSString stringWithFormat:@"%f", [self.itemToEdit.dueDate timeIntervalSince1970]]];
