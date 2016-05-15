@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
 @property (weak, nonatomic) IBOutlet UISwitch *notificationSwitch;
 @property (weak, nonatomic) IBOutlet ColorPickerListView *colorPicker;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *trashButton;
 
 
 @property (nonatomic) NSManagedObjectContext *managedObjectContext;
@@ -45,7 +46,12 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-       
+    
+    
+    if (self.isEditing == NO) {
+        self.trashButton.enabled = NO;
+        
+    }
     self.dateManager = [[NSDateFormatter alloc] init];
     self.dateManager.dateFormat = @"HH:mm, EEE, MMM dd, yyyy";
     self.navigationItem.backBarButtonItem.title = @"Don't Save";

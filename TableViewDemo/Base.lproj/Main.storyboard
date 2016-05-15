@@ -348,7 +348,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpT-2b-Hbm">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                        <state key="normal" title="Today">
+                                        <state key="normal" title="In 6 hours">
                                             <color key="titleColor" red="0.60784313729999995" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -358,7 +358,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdt-OU-Yfe">
                                         <rect key="frame" x="125" y="0.0" width="125" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                        <state key="normal" title="Tomorrow">
+                                        <state key="normal" title="In 24 hours">
                                             <color key="titleColor" red="0.60784313729999995" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -605,6 +605,7 @@
                         <outlet property="notificationSwitch" destination="07b-1a-l9a" id="qBx-rk-pDW"/>
                         <outlet property="saveButton" destination="WZQ-qx-nlY" id="ZFp-9d-tZu"/>
                         <outlet property="titleField" destination="M90-pV-0Uv" id="8Oa-hF-qxM"/>
+                        <outlet property="trashButton" destination="IRq-B1-Wbr" id="I7d-DP-whI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPG-k9-vED" userLabel="First Responder" sceneMemberID="firstResponder"/>
