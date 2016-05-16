@@ -10,6 +10,7 @@
 #import <ColorPicker/ColorPicker-Swift.h>
 
 
+
 @interface DetailViewController() <ColorPickerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextField *detailField;
@@ -193,8 +194,8 @@
 - (void) colorPicker:(ColorPickerListView *)colorPicker selectedColor:(NSString *)selectedColor {
     self.rowColor = selectedColor;
 //    self.itemToEdit.color = color;
-    NSLog(@"Select color - %@", selectedColor);
-    NSLog(@"Color in item - %@", self.itemToEdit.color);
+//    NSLog(@"Select color - %@", selectedColor);
+//    NSLog(@"Color in item - %@", self.itemToEdit.color);
 }
 
 - (void) colorPicker:(ColorPickerListView *)colorPicker deselectedColor:(NSString *)deselectedColor {
@@ -219,9 +220,11 @@
         localNotification.userInfo = @{@"id":idString};
         
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+        
         self.itemToEdit.isNotificationSet = @YES;
     } else {
         self.itemToEdit.isNotificationSet = @NO;
+        NSLog(@"No notifications");
     }
 }
 
@@ -284,16 +287,22 @@
     if (self.dataPicker.date == nil) {
         self.itemToEdit.sectionDate = @" My Simple Tasks";
         self.itemToEdit.sortString = @"a";
+        
+        NSDateComponents *completeDate  =[[NSDateComponents alloc] init];
+        [completeDate setDay:2];
+        [completeDate setMonth: 1];
+        [completeDate setYear: 1970];
+        NSCalendar *g = [[ NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        self.itemToEdit.historyDate = [g dateFromComponents:completeDate];
     } else {
         self.itemToEdit.dueDate = self.dataPicker.date;
         self.itemToEdit.historyDate = self.itemToEdit.dueDate;
         self.itemToEdit.sectionDate = [self dateToSectionDateFromNSDate:self.dataPicker.date];
-        NSString *sort = @"b";
-        sort = [sort stringByAppendingString:[NSString stringWithFormat:@"%f", [self.itemToEdit.dueDate timeIntervalSince1970]]];
-        self.itemToEdit.sortString = sort;
+//        NSString *sort = @"b";
+//        sort = [sort stringByAppendingString:[NSString stringWithFormat:@"%f", [self.itemToEdit.dueDate timeIntervalSince1970]]];
+//        self.itemToEdit.sortString = sort;
         // Create notification, order matters!!
         [self createNotification];
-
     }
     self.itemToEdit.color = self.rowColor;
     

@@ -40,8 +40,10 @@
     [super viewWillAppear:YES];
 //    [self.tableView reloadData];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    //[[UIApplication sharedApplication] cancelAllLocalNotifications];
     [self.tableView reloadData];
+    NSLog(@"Notifications %@", [[UIApplication sharedApplication] scheduledLocalNotifications]);
+
 }
 
 #pragma mark - UITableView DataSource
@@ -63,7 +65,7 @@
     [dateFormatterForSection setDateFormat:@"yyyy-MM-dd HH:mm:ss zzz"];
     [dateFormatterForSection setLocale:[NSLocale currentLocale]];
     NSDate *capturedStartDate = [dateFormatterForSection dateFromString: dateString];
-    NSLog(@"%@", dateString);
+//    NSLog(@"%@", dateString);
     NSString *sectionName = [[NSString alloc] init];
     if ([dateString isEqualToString:@"1970-01-01 21:00:00 +0000"]) {
         sectionName = @"My Simple Tasks";

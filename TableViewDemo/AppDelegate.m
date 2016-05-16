@@ -12,7 +12,7 @@
 
 @interface AppDelegate ()
 
-- (void) fireNotificationAlertWithTitle: (NSString *)title andBody: (NSString *)body;
+- (void) fireNotificationAlertWithTitle: (NSString *)title andBody: (NSString *)body forNotification: (UILocalNotification *)notification;
 
 @end
 
@@ -52,16 +52,17 @@
 }
 
 - (void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    [self fireNotificationAlertWithTitle:@"Simply ToDo" andBody:notification.alertBody];
+    [self fireNotificationAlertWithTitle:@"Simply ToDo" andBody:notification.alertBody forNotification: notification];
 }
 
-- (void) fireNotificationAlertWithTitle: (NSString *)title andBody: (NSString *)body {
+- (void) fireNotificationAlertWithTitle: (NSString *)title andBody: (NSString *)body forNotification: (UILocalNotification *)notification{
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:body preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
-        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        [[UIApplication sharedApplication] cancelLocalNotification:notification];
+        //[[UIApplication sharedApplication] cancelAllLocalNotifications];
         
     }];
     [alert addAction:ok];

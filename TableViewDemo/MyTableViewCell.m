@@ -17,7 +17,7 @@
 
 - (void) setCell: (ToDoItem *) incoming {
     self.toDoItem = incoming;
-    NSLog(@"%@ has dueDate %@, has section name %@ and is complete %@", [incoming title], incoming.dueDate, incoming.sectionDate, incoming.isComplete);
+//    NSLog(@"%@ has dueDate %@, has section name %@ and is complete %@", [incoming title], incoming.dueDate, incoming.sectionDate, incoming.isComplete);
     self.descriptionLabel.text = incoming.detail;
     self.titleLabel.text = incoming.title;
         
