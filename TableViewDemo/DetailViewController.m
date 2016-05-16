@@ -308,11 +308,14 @@
         self.itemToEdit.historyDate = [g dateFromComponents:completeDate];
     } else {
         self.itemToEdit.dueDate = self.dataPicker.date;
-        self.itemToEdit.historyDate = self.itemToEdit.dueDate;
+        
+        
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+        NSLog(@"%@", components);
+        
+        self.itemToEdit.historyDate = [[NSCalendar currentCalendar] dateFromComponents:components];//self.itemToEdit.dueDate;
         self.itemToEdit.sectionDate = [self dateToSectionDateFromNSDate:self.dataPicker.date];
-//        NSString *sort = @"b";
-//        sort = [sort stringByAppendingString:[NSString stringWithFormat:@"%f", [self.itemToEdit.dueDate timeIntervalSince1970]]];
-//        self.itemToEdit.sortString = sort;
+
         // Create notification, order matters!!
         [self createNotification];
     }
