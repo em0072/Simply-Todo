@@ -11,7 +11,7 @@
 
 
 
-@interface DetailViewController() <ColorPickerDelegate>
+@interface DetailViewController() <ColorPickerDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextField *detailField;
 @property (weak, nonatomic) IBOutlet DataPickerLabel *dataPicker;
@@ -106,6 +106,15 @@
 -(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.titleField resignFirstResponder];
     [self.detailField resignFirstResponder];
+}
+
+#pragma mark - TextField Delegate Methods
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    
+    [self.titleField resignFirstResponder];
+    [self.detailField resignFirstResponder];
+    return YES;
 }
 
 #pragma mark - IBAction Methods
@@ -266,6 +275,9 @@
 - (void) setDueDate: (UITapGestureRecognizer *)tap {
     self.hsdpvc = [[HSDatePickerViewController alloc] init];
     self.hsdpvc.delegate = self;
+    if (self.dataPicker.date != nil){
+        self.hsdpvc.date = self.dataPicker.date;
+    }
     self.hsdpvc.mainColor = [[UIColor alloc] initWithRed:0.6078 green:0.6823 blue:0.7843 alpha:1];
     [self presentViewController:self.hsdpvc animated:YES completion:nil];
 }

@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D54E6EC43B2B4250E1FE53B0C0A6662 /* MGSwipeTableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A29F94C7D4495CCA37BE5C45F754AC /* MGSwipeTableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28921866113AA6216A2991B2953F7F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		3B0A70D70852F1EDB691A4CB2B3267AC /* ColorPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251CAE4525880141137E147302EDFA38 /* ColorPickerButton.swift */; };
+		415F1BEF1C7D1B8E4125FA51480F9BC4 /* ColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB76F069497148B181C6656FD938629 /* ColorPicker-dummy.m */; };
+		569D057F4C7A6F69AEA4AB0BD6D9900E /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A3FA2D78661E53204D677B83B40EE3 /* MGSwipeTableCell-dummy.m */; };
+		5A982898386E90B19D9EAE3751C9AC9B /* Pods-Simply ToDo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FD26980A0D86584AD72A638339BE27 /* Pods-Simply ToDo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A9D3D48B182CC30C8EFBC078D89EA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5D160C80108CCBC5B195D3BCB0F46A0E /* ColorPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37630AB82F06CF8B0C9A61E89DBCD85A /* ColorPicker.bundle */; };
+		6153B11FAC78ADEED1707CFD818287A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		63DC27806C23AFFC9B7115E5EEAB9CBF /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 469ED8262313657724E178D40DECD0A7 /* MGSwipeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67558B72295110F846C2420C9540A52A /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D7074410A161AD3A349E4015C14F02 /* MGSwipeTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71FCC7AFF960897E75C79DF1A67EFAA7 /* ButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83368D93C42D1CCA3232DDABD7873880 /* ButtonConfiguration.swift */; };
+		7F4917CD398ED519853BEF42770D2515 /* WarpSelectionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8E95205588AEC37F761CC4241B2EDC /* WarpSelectionAnimation.swift */; };
+		825DABEEBB1DA86BBB6AC6DC6E16609E /* ColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17662B88A69DBF31F06630085B6EE6DE /* ColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C9B3840456D54891B0BCA333DD85DC2 /* HSDatePickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3FFC80D3FBEC019FA9F245015A8BAA /* HSDatePickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E41293E05A8ABB9866D6F3AED0CA10 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2551C244C35AEF5606A24DFDC350E0 /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		99CC2949F6E34732F89D8EAE80ADA387 /* HSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928A61FD47C30BE951C9D7D498D93724 /* HSDatePickerViewController.m */; };
+		9A744D1579E1B522C913FB10A954C4B4 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C6408B10041F171EFEF09E2E7FE9C /* ColorPicker.swift */; };
+		9DE08500D23944B922E36E5FA92EC762 /* HSDatePickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BFE75870F8691834146BE908D4A3B3 /* HSDatePickerViewController-dummy.m */; };
+		B7451E235BC510E770C06645EEA28519 /* ColorPickerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51ECD58EE0016CE3BB909160205010 /* ColorPickerSelection.swift */; };
+		B85C50DB40D2D5C9B33D3781BA47D208 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C629EF77D419EA91AEBC6098CB7D330F /* HSDatePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C705164606419761D661E26F404E67 /* HSDatePickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FD669C32DE47E548CBB0153988C1E2 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7929211C9A2D6E3659AD8D819CE9D3 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F368453DA0F19E3AD6B76FF045AFBE5E /* Pods-Simply ToDo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 562E092540AF51172DF9AD7EDEECDFF0 /* Pods-Simply ToDo-dummy.m */; };
+		F79D258D63EC3F5B1E8866C6F24FEA68 /* HSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91DE9F597249C3D068D4873F508F4C9 /* HSDatePickerViewController.xib */; };
+		FB80852E7792EFF4E5EF510AEE41C1BC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120F3B0FF6930F7B7497AC320C17E32 /* Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		096249D47D1F62D8E4048151AE8A56B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4326A071E8A4B4795FA9988CAB490E5F;
+			remoteInfo = "ColorPicker-ColorPicker";
+		};
+		26A6A4D8457B2A7F1CDD9F4585CE041A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD4022AD2BF08F6E9BDB595A2C70339;
+			remoteInfo = ColorPicker;
+		};
+		42E3F04CC709BAC6C205B64B681AAF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E1263BFF45F6446CF3DE29AE234C893;
+			remoteInfo = MGSwipeTableCell;
+		};
+		CFF22B07AC3DF6C25B4FB2E845F8D55B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F903264A57370F445EE2F39CCAC6C6;
+			remoteInfo = HSDatePickerViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0120F3B0FF6930F7B7497AC320C17E32 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Pod/Classes/Extension.swift; sourceTree = "<group>"; };
+		0788A60ECF3D6FB7381EF800F156FF40 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
+		09A3FA2D78661E53204D677B83B40EE3 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
+		0E8E95205588AEC37F761CC4241B2EDC /* WarpSelectionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarpSelectionAnimation.swift; path = Pod/Classes/WarpSelectionAnimation.swift; sourceTree = "<group>"; };
+		1140A4F552DD15F5292B615FF93B5F90 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
+		17662B88A69DBF31F06630085B6EE6DE /* ColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		251CAE4525880141137E147302EDFA38 /* ColorPickerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerButton.swift; path = Pod/Classes/ColorPickerButton.swift; sourceTree = "<group>"; };
+		2DB095C354325DB0ACBF81F05E8D8D36 /* Pods-Simply ToDo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Simply ToDo.modulemap"; sourceTree = "<group>"; };
+		300A845F14EEC0E037FBB85D370431C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3661503DDF259DDDFD5008D2C47F2E0D /* Pods-Simply ToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simply ToDo.debug.xcconfig"; sourceTree = "<group>"; };
+		37630AB82F06CF8B0C9A61E89DBCD85A /* ColorPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42AC2D7144360AD312583D4DDB283BCD /* HSDatePickerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HSDatePickerViewController.modulemap; sourceTree = "<group>"; };
+		42BF3AC10A2DA74428AB58FE8E785D4D /* ColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		469ED8262313657724E178D40DECD0A7 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		4E4C6408B10041F171EFEF09E2E7FE9C /* ColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPicker.swift; path = Pod/Classes/ColorPicker.swift; sourceTree = "<group>"; };
+		51FDA21547441CD61C9591117EFC7217 /* Pods-Simply ToDo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simply ToDo-acknowledgements.plist"; sourceTree = "<group>"; };
+		5227A6F0E1289EC1A92DD800E6746B2D /* ColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		562E092540AF51172DF9AD7EDEECDFF0 /* Pods-Simply ToDo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simply ToDo-dummy.m"; sourceTree = "<group>"; };
+		5A7929211C9A2D6E3659AD8D819CE9D3 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
+		5E3FFC80D3FBEC019FA9F245015A8BAA /* HSDatePickerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDatePickerViewController-umbrella.h"; sourceTree = "<group>"; };
+		678DAC514DCA17C7936B5F41242081F1 /* MGSwipeTableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MGSwipeTableCell.modulemap; sourceTree = "<group>"; };
+		69C705164606419761D661E26F404E67 /* HSDatePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HSDatePickerViewController.h; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.h; sourceTree = "<group>"; };
+		745F4C6D10CCE643D28D013BBE1A89CC /* Pods-Simply ToDo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simply ToDo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E12A5D61BEFF3003122067D159F80EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83368D93C42D1CCA3232DDABD7873880 /* ButtonConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonConfiguration.swift; path = Pod/Classes/ButtonConfiguration.swift; sourceTree = "<group>"; };
+		852E279860A9B10ECD31FF3403178333 /* HSDatePickerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDatePickerViewController.xcconfig; sourceTree = "<group>"; };
+		91FD26980A0D86584AD72A638339BE27 /* Pods-Simply ToDo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simply ToDo-umbrella.h"; sourceTree = "<group>"; };
+		928A61FD47C30BE951C9D7D498D93724 /* HSDatePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSDatePickerViewController.m; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.m; sourceTree = "<group>"; };
+		98A29F94C7D4495CCA37BE5C45F754AC /* MGSwipeTableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-umbrella.h"; sourceTree = "<group>"; };
+		A7ADA80B1E2706ADB476155D00725AA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD51ECD58EE0016CE3BB909160205010 /* ColorPickerSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerSelection.swift; path = Pod/Classes/ColorPickerSelection.swift; sourceTree = "<group>"; };
+		B7E21CC04F7E4BA728F1F8AAFA21DF9A /* Pods-Simply ToDo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simply ToDo-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEDFA4C41BC1ECB33366D2CAECECC4A0 /* ColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorPicker.xcconfig; sourceTree = "<group>"; };
+		BF2551C244C35AEF5606A24DFDC350E0 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
+		CCE6550D76B60190997118D95C81EB53 /* HSDatePickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSDatePickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B27C65BFDA4586E6EB1BA5C7C51D03 /* HSDatePickerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDatePickerViewController-prefix.pch"; sourceTree = "<group>"; };
+		D1D7074410A161AD3A349E4015C14F02 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
+		D5DB35014258BF0699825C10B563251B /* Pods_Simply_ToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simply_ToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64D999A4326C6F95D9A9E23C7206A8B /* Pods-Simply ToDo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simply ToDo-frameworks.sh"; sourceTree = "<group>"; };
+		E865D767890137FF9A10AF092B0A7CEE /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGSwipeTableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91DE9F597249C3D068D4873F508F4C9 /* HSDatePickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = HSDatePickerViewController.xib; path = HSDatePickerViewControllerDemo/HSDatePickerViewController/HSDatePickerViewController.xib; sourceTree = "<group>"; };
+		E9BFE75870F8691834146BE908D4A3B3 /* HSDatePickerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSDatePickerViewController-dummy.m"; sourceTree = "<group>"; };
+		EC995F1C5EEAB943FF2E7824F8B63553 /* Pods-Simply ToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simply ToDo.release.xcconfig"; sourceTree = "<group>"; };
+		EDD6EFF4F1B490D4E6C82FD9F4A04231 /* ColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ColorPicker.modulemap; sourceTree = "<group>"; };
+		F43AAE65DBDE8AA8FC217AAE7D999ADD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB76F069497148B181C6656FD938629 /* ColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ColorPicker-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31DE582DBB9134E833FB9E0BD68F58AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6153B11FAC78ADEED1707CFD818287A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B21274F8767971D9B71CDBF84D055E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4C54721D5688CDACE3F023521CCF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85C50DB40D2D5C9B33D3781BA47D208 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0271E88F65B17975F56915CAAD607F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9D3D48B182CC30C8EFBC078D89EA05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29CCEE7235B9BE03DE39A566160CCAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28921866113AA6216A2991B2953F7F4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B958156201601BAA9540A890B480EC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42AC2D7144360AD312583D4DDB283BCD /* HSDatePickerViewController.modulemap */,
+				852E279860A9B10ECD31FF3403178333 /* HSDatePickerViewController.xcconfig */,
+				E9BFE75870F8691834146BE908D4A3B3 /* HSDatePickerViewController-dummy.m */,
+				D1B27C65BFDA4586E6EB1BA5C7C51D03 /* HSDatePickerViewController-prefix.pch */,
+				5E3FFC80D3FBEC019FA9F245015A8BAA /* HSDatePickerViewController-umbrella.h */,
+				F43AAE65DBDE8AA8FC217AAE7D999ADD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HSDatePickerViewController";
+			sourceTree = "<group>";
+		};
+		2BC758EB85220D57818FA27B3957B039 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				469ED8262313657724E178D40DECD0A7 /* MGSwipeButton.h */,
+				5A7929211C9A2D6E3659AD8D819CE9D3 /* MGSwipeButton.m */,
+				D1D7074410A161AD3A349E4015C14F02 /* MGSwipeTableCell.h */,
+				BF2551C244C35AEF5606A24DFDC350E0 /* MGSwipeTableCell.m */,
+				FEB11ABA854B81188B22377C7D6D5C84 /* Support Files */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
+		3F6FA64F387CDEED8421725EA4F5BEC3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				625B61CC85A881F8C691BE5CBF10DD66 /* Pods-Simply ToDo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4D2BC50E63166A49E43EBA0F66F27738 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDD6EFF4F1B490D4E6C82FD9F4A04231 /* ColorPicker.modulemap */,
+				BEDFA4C41BC1ECB33366D2CAECECC4A0 /* ColorPicker.xcconfig */,
+				FBB76F069497148B181C6656FD938629 /* ColorPicker-dummy.m */,
+				5227A6F0E1289EC1A92DD800E6746B2D /* ColorPicker-prefix.pch */,
+				17662B88A69DBF31F06630085B6EE6DE /* ColorPicker-umbrella.h */,
+				A7ADA80B1E2706ADB476155D00725AA1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ColorPicker";
+			sourceTree = "<group>";
+		};
+		625B61CC85A881F8C691BE5CBF10DD66 /* Pods-Simply ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				7E12A5D61BEFF3003122067D159F80EE /* Info.plist */,
+				2DB095C354325DB0ACBF81F05E8D8D36 /* Pods-Simply ToDo.modulemap */,
+				745F4C6D10CCE643D28D013BBE1A89CC /* Pods-Simply ToDo-acknowledgements.markdown */,
+				51FDA21547441CD61C9591117EFC7217 /* Pods-Simply ToDo-acknowledgements.plist */,
+				562E092540AF51172DF9AD7EDEECDFF0 /* Pods-Simply ToDo-dummy.m */,
+				D64D999A4326C6F95D9A9E23C7206A8B /* Pods-Simply ToDo-frameworks.sh */,
+				B7E21CC04F7E4BA728F1F8AAFA21DF9A /* Pods-Simply ToDo-resources.sh */,
+				91FD26980A0D86584AD72A638339BE27 /* Pods-Simply ToDo-umbrella.h */,
+				3661503DDF259DDDFD5008D2C47F2E0D /* Pods-Simply ToDo.debug.xcconfig */,
+				EC995F1C5EEAB943FF2E7824F8B63553 /* Pods-Simply ToDo.release.xcconfig */,
+			);
+			name = "Pods-Simply ToDo";
+			path = "Target Support Files/Pods-Simply ToDo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9FFF4EA2290BE5602D8DE7069914BA6D /* Pods */,
+				E5BDECDC01DC93CBE1452E67F6E8FE02 /* Products */,
+				3F6FA64F387CDEED8421725EA4F5BEC3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9FFF4EA2290BE5602D8DE7069914BA6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E62F2E76D6308EEF65303D0148BABD52 /* ColorPicker */,
+				A5F1744751823EEA191B13A504A49DFE /* HSDatePickerViewController */,
+				2BC758EB85220D57818FA27B3957B039 /* MGSwipeTableCell */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5F1744751823EEA191B13A504A49DFE /* HSDatePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69C705164606419761D661E26F404E67 /* HSDatePickerViewController.h */,
+				928A61FD47C30BE951C9D7D498D93724 /* HSDatePickerViewController.m */,
+				F0A3C060B9953CEB0C494E9028393783 /* Resources */,
+				2B958156201601BAA9540A890B480EC2 /* Support Files */,
+			);
+			path = HSDatePickerViewController;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E5BDECDC01DC93CBE1452E67F6E8FE02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37630AB82F06CF8B0C9A61E89DBCD85A /* ColorPicker.bundle */,
+				42BF3AC10A2DA74428AB58FE8E785D4D /* ColorPicker.framework */,
+				CCE6550D76B60190997118D95C81EB53 /* HSDatePickerViewController.framework */,
+				E865D767890137FF9A10AF092B0A7CEE /* MGSwipeTableCell.framework */,
+				D5DB35014258BF0699825C10B563251B /* Pods_Simply_ToDo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E62F2E76D6308EEF65303D0148BABD52 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				83368D93C42D1CCA3232DDABD7873880 /* ButtonConfiguration.swift */,
+				4E4C6408B10041F171EFEF09E2E7FE9C /* ColorPicker.swift */,
+				251CAE4525880141137E147302EDFA38 /* ColorPickerButton.swift */,
+				AD51ECD58EE0016CE3BB909160205010 /* ColorPickerSelection.swift */,
+				0120F3B0FF6930F7B7497AC320C17E32 /* Extension.swift */,
+				0E8E95205588AEC37F761CC4241B2EDC /* WarpSelectionAnimation.swift */,
+				4D2BC50E63166A49E43EBA0F66F27738 /* Support Files */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		F0A3C060B9953CEB0C494E9028393783 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E91DE9F597249C3D068D4873F508F4C9 /* HSDatePickerViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FEB11ABA854B81188B22377C7D6D5C84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				300A845F14EEC0E037FBB85D370431C7 /* Info.plist */,
+				678DAC514DCA17C7936B5F41242081F1 /* MGSwipeTableCell.modulemap */,
+				0788A60ECF3D6FB7381EF800F156FF40 /* MGSwipeTableCell.xcconfig */,
+				09A3FA2D78661E53204D677B83B40EE3 /* MGSwipeTableCell-dummy.m */,
+				1140A4F552DD15F5292B615FF93B5F90 /* MGSwipeTableCell-prefix.pch */,
+				98A29F94C7D4495CCA37BE5C45F754AC /* MGSwipeTableCell-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MGSwipeTableCell";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E754E9D399930F33BC210A07296168D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DC27806C23AFFC9B7115E5EEAB9CBF /* MGSwipeButton.h in Headers */,
+				1D54E6EC43B2B4250E1FE53B0C0A6662 /* MGSwipeTableCell-umbrella.h in Headers */,
+				67558B72295110F846C2420C9540A52A /* MGSwipeTableCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381F73875369D42D4F1EF49259D4E8E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825DABEEBB1DA86BBB6AC6DC6E16609E /* ColorPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6469444A9074E47FC227C9F8AF3EB321 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A982898386E90B19D9EAE3751C9AC9B /* Pods-Simply ToDo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B1A58800392D69A4C1675B6ED223D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9B3840456D54891B0BCA333DD85DC2 /* HSDatePickerViewController-umbrella.h in Headers */,
+				C629EF77D419EA91AEBC6098CB7D330F /* HSDatePickerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14A0DD7D74B289CC03C1DE96A4275EC8 /* Pods-Simply ToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870659EC495483C28D2F045DECADCB0C /* Build configuration list for PBXNativeTarget "Pods-Simply ToDo" */;
+			buildPhases = (
+				CE0A12C3E72A5B083E2937DB04E66089 /* Sources */,
+				31DE582DBB9134E833FB9E0BD68F58AD /* Frameworks */,
+				6469444A9074E47FC227C9F8AF3EB321 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFAA355FB98272FAC9041678C4E1F32F /* PBXTargetDependency */,
+				62CF9C11172ED340635A35FB37FC8CD3 /* PBXTargetDependency */,
+				51A3E0950B8038DCEC02EDEA51CAAAF5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Simply ToDo";
+			productName = "Pods-Simply ToDo";
+			productReference = D5DB35014258BF0699825C10B563251B /* Pods_Simply_ToDo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4326A071E8A4B4795FA9988CAB490E5F /* ColorPicker-ColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD27C4633B4679794A47DF3C6BFC091 /* Build configuration list for PBXNativeTarget "ColorPicker-ColorPicker" */;
+			buildPhases = (
+				D321B8CC66FB53206AABAFFACD7148CA /* Sources */,
+				44B21274F8767971D9B71CDBF84D055E /* Frameworks */,
+				615CA55F11F5514B6F2F152EEF960E1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorPicker-ColorPicker";
+			productName = "ColorPicker-ColorPicker";
+			productReference = 37630AB82F06CF8B0C9A61E89DBCD85A /* ColorPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4E1263BFF45F6446CF3DE29AE234C893 /* MGSwipeTableCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B05C24F339BF84D6E16E6538A947C90 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
+			buildPhases = (
+				C8C13026DC462129E945B064D7D89D95 /* Sources */,
+				AC0271E88F65B17975F56915CAAD607F /* Frameworks */,
+				1E754E9D399930F33BC210A07296168D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGSwipeTableCell;
+			productName = MGSwipeTableCell;
+			productReference = E865D767890137FF9A10AF092B0A7CEE /* MGSwipeTableCell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFD4022AD2BF08F6E9BDB595A2C70339 /* ColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DE00401E3D7A48A3D74B94FB0BEA35 /* Build configuration list for PBXNativeTarget "ColorPicker" */;
+			buildPhases = (
+				D340D8CE62AB808622D7B686A507ADAB /* Sources */,
+				F29CCEE7235B9BE03DE39A566160CCAF /* Frameworks */,
+				292ED71E0DD5C7E86F8A05F4AA0A25FB /* Resources */,
+				381F73875369D42D4F1EF49259D4E8E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8422F431B86B9E3D10E6C95470F23DBC /* PBXTargetDependency */,
+			);
+			name = ColorPicker;
+			productName = ColorPicker;
+			productReference = 42BF3AC10A2DA74428AB58FE8E785D4D /* ColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2F903264A57370F445EE2F39CCAC6C6 /* HSDatePickerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188C9EC846E926C797842F877D89B746 /* Build configuration list for PBXNativeTarget "HSDatePickerViewController" */;
+			buildPhases = (
+				0D2F30E3714B2C6C1110C01B5E2183A9 /* Sources */,
+				5FA4C54721D5688CDACE3F023521CCF0 /* Frameworks */,
+				B6B1A58800392D69A4C1675B6ED223D6 /* Headers */,
+				33C2C9CD42EFF7BF8662681C16831008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSDatePickerViewController;
+			productName = HSDatePickerViewController;
+			productReference = CCE6550D76B60190997118D95C81EB53 /* HSDatePickerViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E5BDECDC01DC93CBE1452E67F6E8FE02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFD4022AD2BF08F6E9BDB595A2C70339 /* ColorPicker */,
+				4326A071E8A4B4795FA9988CAB490E5F /* ColorPicker-ColorPicker */,
+				E2F903264A57370F445EE2F39CCAC6C6 /* HSDatePickerViewController */,
+				4E1263BFF45F6446CF3DE29AE234C893 /* MGSwipeTableCell */,
+				14A0DD7D74B289CC03C1DE96A4275EC8 /* Pods-Simply ToDo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		292ED71E0DD5C7E86F8A05F4AA0A25FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D160C80108CCBC5B195D3BCB0F46A0E /* ColorPicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33C2C9CD42EFF7BF8662681C16831008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79D258D63EC3F5B1E8866C6F24FEA68 /* HSDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		615CA55F11F5514B6F2F152EEF960E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D2F30E3714B2C6C1110C01B5E2183A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE08500D23944B922E36E5FA92EC762 /* HSDatePickerViewController-dummy.m in Sources */,
+				99CC2949F6E34732F89D8EAE80ADA387 /* HSDatePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8C13026DC462129E945B064D7D89D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8FD669C32DE47E548CBB0153988C1E2 /* MGSwipeButton.m in Sources */,
+				569D057F4C7A6F69AEA4AB0BD6D9900E /* MGSwipeTableCell-dummy.m in Sources */,
+				95E41293E05A8ABB9866D6F3AED0CA10 /* MGSwipeTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0A12C3E72A5B083E2937DB04E66089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F368453DA0F19E3AD6B76FF045AFBE5E /* Pods-Simply ToDo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D321B8CC66FB53206AABAFFACD7148CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D340D8CE62AB808622D7B686A507ADAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FCC7AFF960897E75C79DF1A67EFAA7 /* ButtonConfiguration.swift in Sources */,
+				415F1BEF1C7D1B8E4125FA51480F9BC4 /* ColorPicker-dummy.m in Sources */,
+				9A744D1579E1B522C913FB10A954C4B4 /* ColorPicker.swift in Sources */,
+				3B0A70D70852F1EDB691A4CB2B3267AC /* ColorPickerButton.swift in Sources */,
+				B7451E235BC510E770C06645EEA28519 /* ColorPickerSelection.swift in Sources */,
+				FB80852E7792EFF4E5EF510AEE41C1BC /* Extension.swift in Sources */,
+				7F4917CD398ED519853BEF42770D2515 /* WarpSelectionAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51A3E0950B8038DCEC02EDEA51CAAAF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MGSwipeTableCell;
+			target = 4E1263BFF45F6446CF3DE29AE234C893 /* MGSwipeTableCell */;
+			targetProxy = 42E3F04CC709BAC6C205B64B681AAF69 /* PBXContainerItemProxy */;
+		};
+		62CF9C11172ED340635A35FB37FC8CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HSDatePickerViewController;
+			target = E2F903264A57370F445EE2F39CCAC6C6 /* HSDatePickerViewController */;
+			targetProxy = CFF22B07AC3DF6C25B4FB2E845F8D55B /* PBXContainerItemProxy */;
+		};
+		8422F431B86B9E3D10E6C95470F23DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ColorPicker-ColorPicker";
+			target = 4326A071E8A4B4795FA9988CAB490E5F /* ColorPicker-ColorPicker */;
+			targetProxy = 096249D47D1F62D8E4048151AE8A56B0 /* PBXContainerItemProxy */;
+		};
+		FFAA355FB98272FAC9041678C4E1F32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ColorPicker;
+			target = CFD4022AD2BF08F6E9BDB595A2C70339 /* ColorPicker */;
+			targetProxy = 26A6A4D8457B2A7F1CDD9F4585CE041A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01936BD68B2EE3D51A816D4CE6B343D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0788A60ECF3D6FB7381EF800F156FF40 /* MGSwipeTableCell.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MGSwipeTableCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B3AAE3A734444BBAF9A7D0F62D49ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDFA4C41BC1ECB33366D2CAECECC4A0 /* ColorPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ColorPicker/ColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ColorPicker/ColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EDC53F5AFC5812EC6E37FDF3302C69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852E279860A9B10ECD31FF3403178333 /* HSDatePickerViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSDatePickerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HSDatePickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		235B0227568ADB42B0A0347C156E0808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852E279860A9B10ECD31FF3403178333 /* HSDatePickerViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSDatePickerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HSDatePickerViewController/HSDatePickerViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HSDatePickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FEDB2588F77A75AF6F9A788E6D022DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDFA4C41BC1ECB33366D2CAECECC4A0 /* ColorPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		76554015BFA3BBEDB91793D9C8DAE209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDFA4C41BC1ECB33366D2CAECECC4A0 /* ColorPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ColorPicker/ColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ColorPicker/ColorPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B0BA7C78361B78B33F9FF7FF718B5681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDFA4C41BC1ECB33366D2CAECECC4A0 /* ColorPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C52939A31F4AC8C24B3F0B3D3B7E934F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0788A60ECF3D6FB7381EF800F156FF40 /* MGSwipeTableCell.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MGSwipeTableCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E637CF2747C2C3E9C29E15E6A7DB2119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3661503DDF259DDDFD5008D2C47F2E0D /* Pods-Simply ToDo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Simply ToDo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Simply ToDo/Pods-Simply ToDo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Simply_ToDo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9A06B410E350DF5E94BA02291710F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC995F1C5EEAB943FF2E7824F8B63553 /* Pods-Simply ToDo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Simply ToDo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Simply ToDo/Pods-Simply ToDo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Simply_ToDo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188C9EC846E926C797842F877D89B746 /* Build configuration list for PBXNativeTarget "HSDatePickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EDC53F5AFC5812EC6E37FDF3302C69F /* Debug */,
+				235B0227568ADB42B0A0347C156E0808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B05C24F339BF84D6E16E6538A947C90 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52939A31F4AC8C24B3F0B3D3B7E934F /* Debug */,
+				01936BD68B2EE3D51A816D4CE6B343D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870659EC495483C28D2F045DECADCB0C /* Build configuration list for PBXNativeTarget "Pods-Simply ToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637CF2747C2C3E9C29E15E6A7DB2119 /* Debug */,
+				E9A06B410E350DF5E94BA02291710F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD27C4633B4679794A47DF3C6BFC091 /* Build configuration list for PBXNativeTarget "ColorPicker-ColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEDB2588F77A75AF6F9A788E6D022DE /* Debug */,
+				B0BA7C78361B78B33F9FF7FF718B5681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DE00401E3D7A48A3D74B94FB0BEA35 /* Build configuration list for PBXNativeTarget "ColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3AAE3A734444BBAF9A7D0F62D49ED5 /* Debug */,
+				76554015BFA3BBEDB91793D9C8DAE209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
